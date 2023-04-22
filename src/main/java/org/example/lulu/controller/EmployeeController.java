@@ -139,9 +139,11 @@ private AutionUtis autionUtis;
         if(management==null) {
            return R.error("信息填写错误");
         }else {
+            int let=6;
             employeeService.save(management);
             int let=6;
             return R.success("添加管理员成功");
+
         }
     }
 
